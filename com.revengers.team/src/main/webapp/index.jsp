@@ -137,7 +137,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 <th><input type="text" name="tenure"></th>
 </tr>
 </table>
- <input type="submit" value="Calculate EMI" style="border: none; color:wheat; font-weight: bold; margin-top: 10px;padding: 5px 5px;background-color: #7b312d; border-radius: 5px;">
+ <input type="submit" value="CALCULATE EMI" style="border: none; color:wheat; font-weight: bold; margin-top: 10px;padding: 5px 5px;background-color: #7b312d; border-radius: 5px;">
 </form>
 </article>			
 </div>
