@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+    id="WebApp_ID" version="3.1">
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>newenrollment.jsp</welcome-file>
+        <welcome-file>claimstatus.jsp</welcome-file>
+        <welcome-file>myprofile.jsp</welcome-file>
+        <welcome-file>Success.jsp</welcome-file>
+        <welcome-file>Success1.jsp</welcome-file>
+        <welcome-file>mail.jsp</welcome-file>
+        <welcome-file>mailbox.jsp</welcome-file>
+        <welcome-file>inbox.jsp</welcome-file>
+        <welcome-file>compose.jsp</welcome-file>
+        <welcome-file>otherloans.jsp</welcome-file>
+        <welcome-file>FetchAir.jsp</welcome-file>
+        <welcome-file>FetchLife.jsp</welcome-file>
+        <welcome-file>FetchMedical.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>CreatedServlet</servlet-name>
+        <servlet-class>com.revengers.team.controller.CreatedServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CreatedServlet</servlet-name>
+        <url-pattern>/CreatedServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CreatedServletClaim</servlet-name>
+        <servlet-class>com.revengers.team.controller.CreatedServletClaim</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CreatedServletClaim</servlet-name>
+        <url-pattern>/CreatedServletClaim</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Profile</servlet-name>
+        <servlet-class>com.revengers.team.controller.Profile</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Profile</servlet-name>
+        <url-pattern>/Profile</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CreatedServletEmail</servlet-name>
+        <servlet-class>com.revengers.team.controller.CreatedServletEmail</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CreatedServletEmail</servlet-name>
+        <url-pattern>/CreatedServletEmail</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+        <servlet-name>InsuranceServlet</servlet-name>
+        <servlet-class>com.revengers.team.controller.InsuranceServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>InsuranceServlet</servlet-name>
+        <url-pattern>/InsuranceServlet</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+        <servlet-name>AlInsuranceServlet</servlet-name>
+        <servlet-class>com.revengers.team.controller.AlInsuranceServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AlInsuranceServlet</servlet-name>
+        <url-pattern>/AlInsuranceServlet</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+        <servlet-name>LIInsuranceServlet</servlet-name>
+        <servlet-class>com.revengers.team.controller.LIInsuranceServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LIInsuranceServlet</servlet-name>
+        <url-pattern>/LIInsuranceServlet</url-pattern>
+    </servlet-mapping>
+     
+
+</web-app>
