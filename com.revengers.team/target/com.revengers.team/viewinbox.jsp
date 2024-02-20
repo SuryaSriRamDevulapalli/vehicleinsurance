@@ -105,7 +105,7 @@ border: 1px solid white;
 
 
 <div class="bottom-bar">
-<button onclick="window.location.href='index.jsp';"style="font-size: 15px; padding: 10px 20px; background-color: #7b312d; color: wheat; border: none; border-radius: 5px; cursor: pointer;">Back to Homepage</button>
+<button onclick="window.location.href='mailbox.jsp';"style="font-size: 15px; padding: 10px 20px; background-color: #7b312d; color: wheat; border: none; border-radius: 5px; cursor: pointer;">Back to MailBox</button>
 </div>      
 </body>
 </html>

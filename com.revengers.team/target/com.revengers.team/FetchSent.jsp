@@ -80,6 +80,7 @@ border: 1px solid white;
             <th>Recipient</th>
             <th>Subject</th>
             <th>Message</th>
+            <th>Sent On</th>
         </tr>
         <%
         Object obj = session.getAttribute("FetchSent");
@@ -94,6 +95,7 @@ border: 1px solid white;
            <td><%=s.getRecipient() %></td>
            <td><%=s.getSubject() %></td>
            <td><%=s.getMessage() %></td>
+           <td><%=s.getTimestamp_column() %>
            </tr>
            <%} } %>
     </table>
@@ -101,7 +103,7 @@ border: 1px solid white;
 
 
 <div class="bottom-bar">
-<button onclick="window.location.href='index.jsp';"style="font-size: 15px; padding: 10px 20px; background-color: #7b312d; color: wheat; border: none; border-radius: 5px; cursor: pointer;">Back to Homepage</button>
+<button onclick="window.location.href='mailbox.jsp';"style="font-size: 15px; padding: 10px 20px; background-color: #7b312d; color: wheat; border: none; border-radius: 5px; cursor: pointer;">Back to MailBox</button>
 </div>      
 </body>
 </html>

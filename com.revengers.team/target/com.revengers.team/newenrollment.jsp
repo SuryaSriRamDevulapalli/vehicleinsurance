@@ -75,11 +75,11 @@ border: 1px solid white;
 <table align="center" style="margin-top: 10px;">
 	<tr>
 	<th>vehicle_name:</th>
-	<th><input type="text" name="vehicle_name"></th>
+	<th><input type="text" name="vehicle_name" required="required"></th>
 	</tr>
 	<tr>
 	<th>variant:</th>
-	<th><input type="text" name="variant"></th>
+	<th><input type="text" name="variant" required="required"></th>
 	</tr>
 	<tr>
 	<th>fuel_type:</th>
@@ -94,13 +94,13 @@ border: 1px solid white;
     <th>
         <select name="policy_type" style="border: none; color:#7b312d; font-weight: bold;">
             <option value="Comprehensive" >Comprehensive</option>
-            <option value="Third Party">Third Party</option>
+            <option value="ThirdParty">ThirdParty</option>
         </select>
     </th>
 </tr>
 	<tr>
 	<th>name:</th>
-	<th><input type="text" name="name"></th>
+	<th><input type="text" name="name" required="required"></th>
 	</tr>
 	<tr>
 	<th>email:</th>
