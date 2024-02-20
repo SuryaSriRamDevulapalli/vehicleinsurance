@@ -62,10 +62,11 @@ public class CreatedServletEmail extends HttpServlet{
 	//view sent
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("Get is triggered");
+		String selectedSender = request.getParameter("sender");
 		Implementation1 imp = new Implementation1();
 		List<InsuranceEntityEmail> result;
 		try {
-			result = imp.fetchSent();
+			result = imp.fetchSent(selectedSender);
 			HttpSession session = request.getSession();
 			session.setAttribute("FetchSent", result);
 			

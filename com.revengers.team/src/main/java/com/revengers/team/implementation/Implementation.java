@@ -37,7 +37,7 @@ public class Implementation {
 		int result = 0;
 		System.out.println("Enrollemnt method triggered");
 		
-		String policy_type = "Comprehensive";
+		String policy_type = entity.getPolicy_type();
 		int price = pricepolicy(policy_type);
 		
 		String query = "insert into enrollment (policy_no, vehicle_name, variant, vehicle_no, policy_type, customer_id, price, name, email, number, pincode, fuel_type) values (?,?,?,?,?,?,?,?,?,?,?,?)";
@@ -63,11 +63,9 @@ public class Implementation {
 	private static int pricepolicy(String policy_type) {
 	    if (policy_type.equalsIgnoreCase("Comprehensive")) {
 	        return 5600;
-	    } else if (policy_type.equalsIgnoreCase("Third Party")) {
-	        return 4500; 
 	    } else {
-	         throw new IllegalArgumentException("Unknown policy type: " + policy_type);
-	    }
+	        return 4500; 
+	    } 
 	}
 
 	
@@ -94,7 +92,7 @@ public class Implementation {
     }
     
     public int priceDB() throws SQLException {
-    	String query = "SELECT price FROM enrollment ORDER BY policy_no DESC LIMIT 1";
+    	String query = "SELECT price FROM enrollment ORDER BY timestamp_column DESC LIMIT 1";
         prep = connect.prepareStatement(query);
         resultset = prep.executeQuery();
         if (resultset.next()) {

@@ -76,30 +76,39 @@ h2{
 <body>
 <header>
     <img src="https://ih1.redbubble.net/image.457170105.5964/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="">
-    REVENGERS VEHICLE INSURANCE
+    REVENGERS LIFE INSURANCE
 </header>
 <br>
     <div class="bill">
-        <h2>Policy Details & Billing Details:</h2>
-        <form action="index.jsp" method="post">
-<table>
-<%
-Object obj = session.getAttribute("details3");
-if(obj == null){
-	out.print("No records found :");
-}else{
-	List<Entity> entity = (ArrayList<Entity>) obj;	
-%>
-<tr>
-<th>SNo: </th><th>Name: </th><th>Age:</th><th>PolicyNo: </th><th>StartDate: </th><th>EndDate: </th></tr>
-<%
-for(Entity enrol : entity){
-%>
-<tr>
-<td><%=enrol.getSNo() %></td><td><%=enrol.getName()%></td><td><%= enrol.getAge()%></td><td><%=enrol.getPolicyNo()%></td><td><%=enrol.getStartDate()%></td><td><%=enrol.getEndDate()%></td></tr>
-<% } } %>
-</table>
-            <input type="submit" value="Back to Homepage">
+    <h2>Life Policy Details:</h2>
+    <form action="otherloans.jsp" method="post">
+        <%
+        Object obj = session.getAttribute("details3");
+        if(obj == null){
+            out.print("No records found :");
+        } else {
+            List<LIEntity> entity = (ArrayList<LIEntity>) obj;
+            for(LIEntity enrol : entity){
+        %>
+        <label for="sno">Claim ID:</label>
+        <input type="text" id="sno" name="sno" value="<%= enrol.getSNo() %>" readonly>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="<%= enrol.getName() %>" readonly>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" value="<%= enrol.getAge() %>" readonly>
+
+        <label for="policyNo">PolicyNo:</label>
+        <input type="text" id="policyNo" name="policyNo" value="<%= enrol.getPolicyNo() %>" readonly>
+
+        <label for="startDate">StartDate:</label>
+        <input type="text" id="startDate" name="startDate" value="<%= enrol.getStartDate() %>" readonly>
+
+        <label for="endDate">EndDate:</label>
+        <input type="text" id="endDate" name="endDate" value="<%= enrol.getEndDate() %>" readonly>
+        <% } }%>
+            <input type="submit" value="Back to OtherLoans">
         </form>
     </div>
 

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Mail Box</title>
+<title>Other Policies</title>
 </head>
 
 <style>
@@ -67,7 +67,7 @@ border: 1px solid white;
 <body>
 <header>
     <img src="https://ih1.redbubble.net/image.457170105.5964/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="">
-    REVENGERS VEHICLE INSURANCE
+    REVENGERS LIFE/MEDICAL/AIRLINE INSURANCE
 </header>
 
 <h3 align="center" style="margin-top: 20px; color: wheat; font-size: 25px">View Other Policies!!</h3>
@@ -86,7 +86,7 @@ border: 1px solid white;
 <br>
 <form action="LIInsuranceServlet" method="get">
 <div style="text-align: center;">
-    <input type="submit" value="Compose Life Policy" style="border: none; color:wheat; font-weight: bold; margin-top: 10px;padding: 10px 10px;background-color: #7b312d; border-radius: 5px; font-size: 20px">
+    <input type="submit" value="View Life Policy" style="border: none; color:wheat; font-weight: bold; margin-top: 10px;padding: 10px 10px;background-color: #7b312d; border-radius: 5px; font-size: 20px">
 </div>
 </form>	
 

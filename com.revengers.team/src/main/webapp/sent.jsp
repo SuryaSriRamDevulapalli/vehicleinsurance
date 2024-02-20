@@ -77,9 +77,9 @@ border: 1px solid white;
     <th>Email:</th>
     <th>
         <select name="sender" id="sender" style="border: none; color:#7b312d; font-weight: bold;">
-            <option value="suryaram4@gmail.com" >suryaram4@gmail.com</option>
-            <option value="lekha@gmail.com">lekha@gmail.com</option>
-        </select>
+                    <option value="suryaram4@gmail.com">suryaram4@gmail.com</option>
+                    <option value="lekha@gmail.com">lekha@gmail.com</option>
+                </select>
     </th>
 
 </table>

@@ -41,13 +41,14 @@ public class Implementation1 {
 		return result;
 	}
 	//FetchSent
-	public List<InsuranceEntityEmail> fetchSent() throws SQLException {
+	public List<InsuranceEntityEmail> fetchSent(String selectedSender) throws SQLException {
 	    List<InsuranceEntityEmail> listProduct = new ArrayList<>();
 	    System.out.println("Fetch data triggered");
-	    String query = "SELECT * FROM emails order by timestamp_column desc";
+	    String query = "SELECT * FROM emails  where sender = ? order by timestamp_column desc";
 
-	    state = connect.createStatement();
-		resultset = state.executeQuery(query);
+	    prep = connect.prepareStatement(query);
+	    prep.setString(1, selectedSender);
+	    resultset = prep.executeQuery();
 		
 		InsuranceEntityEmail entity = null;
 	        
@@ -60,12 +61,7 @@ public class Implementation1 {
 	            entity.setTimestamp_column(resultset.getTimestamp(5));
 	            listProduct.add(entity);
 	        }        
-//	        try {
-//	            if (prep != null) prep.close();
-//	            if (resultset != null) resultset.close();
-//	        } catch (SQLException e) {
-//	            e.printStackTrace();
-//	        }  
+
 	    return listProduct;
 	}
 
